@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.MainActivity">
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager
+        android:id="@+id/activity_main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/activity_main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+    <ImageButton
+        android:id="@+id/activity_main_add"
+        android:layout_width="@dimen/ah_icon_size"
+        android:layout_height="@dimen/ah_icon_size"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/ah_icon_margin_bottom"
+        android:elevation="@dimen/ah_icon_elevation"
+        android:background="@drawable/circle_background"
+        android:contentDescription="@string/center_icon_background"
+        android:src="@drawable/ic_add"/>
+
+    <ImageView
+        android:id="@+id/activity_main_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="17.5dp"
+        android:elevation="12dp"
+        android:src="@drawable/ic_cancel"
+        android:visibility="gone"
+        android:contentDescription="@string/center_icon" />
+
+    <ImageView
+        android:id="@+id/activity_main_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/cancel_button_image" />
+
+</android.support.design.widget.CoordinatorLayout>

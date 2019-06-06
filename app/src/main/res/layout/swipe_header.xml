@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazing.zhizhi.view.MyRefreshHeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/refresh_header_height"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/header_icon_margin_end"
+            android:layout_toStartOf="@+id/header_text"
+            android:background="@drawable/header_icon"
+            android:contentDescription="@string/header_icon" />
+
+        <ImageView
+            android:id="@+id/header_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/header_icon_margin_end"
+            android:layout_toStartOf="@+id/header_text"
+            android:background="@drawable/success_icon"
+            android:contentDescription="@string/header_success_icon" />
+
+        <ProgressBar
+            android:id="@+id/header_progressbar"
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/header_icon_margin_end"
+            android:layout_toStartOf="@+id/header_text" />
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="@dimen/header_and_foot_text_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="?attr/colorPrimary" />
+    </RelativeLayout>
+
+</com.amazing.zhizhi.view.MyRefreshHeaderView>

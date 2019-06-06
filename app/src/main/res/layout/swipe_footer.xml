@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazing.zhizhi.view.MyRefreshFooterView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/refresh_footer_height">
+
+        <ProgressBar
+            android:id="@+id/footer_progressbar"
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/footer_text" />
+
+        <ImageView
+            android:id="@+id/footer_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/footer_text"
+            android:background="@drawable/success_icon"
+            android:contentDescription="@string/footer_success_icon" />
+
+        <TextView
+            android:id="@+id/footer_text"
+            android:layout_width="@dimen/header_and_foot_text_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/load_more"
+            android:textColor="?attr/colorPrimary"/>
+    </RelativeLayout>
+
+</com.amazing.zhizhi.view.MyRefreshFooterView>

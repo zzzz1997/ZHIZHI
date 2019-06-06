@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/find_recycle_item_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginTop="@dimen/find_recycler_margin"
+    android:layout_marginBottom="@dimen/find_recycler_margin"
+    android:elevation="@dimen/elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/find_recycle_item_icon"
+            android:layout_width="@dimen/find_user_icon_width"
+            android:layout_height="@dimen/find_user_icon_width"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/find_recycle_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/text_padding"
+                android:textSize="@dimen/title_text_size"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/find_recycle_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/text_padding"
+                android:paddingEnd="0dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/find_recycle_item_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_padding"
+            android:text="@string/app_name"
+            android:textColor="#ff4500"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/find_recycle_item_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_arrow"
+            android:layout_margin="@dimen/elevation"
+            android:contentDescription="@string/menu_button"/>
+
+    </LinearLayout>
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/find_recycle_item_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/find_recycle_item_content_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_padding"
+        android:textIsSelectable="true"/>
+    <ImageView
+        android:id="@+id/find_recycle_item_content_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/find_recycler_item_content_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/find_recycle_item_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_padding"
+            android:layout_marginEnd="@dimen/text_padding"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/advertisement_text_background"
+            android:text="@string/advertisement"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/find_recycle_item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/text_padding"
+            android:paddingEnd="@dimen/text_padding"
+            android:background="@drawable/text_button_background" />
+
+    </LinearLayout>
+
+</LinearLayout>

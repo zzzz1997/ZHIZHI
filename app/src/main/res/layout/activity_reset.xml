@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center_horizontal">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_reset_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/elevation"
+        app:navigationIcon="@drawable/left_arrow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:textColor="@android:color/white"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/activity_reset_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/text_input_layout_padding_top">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/edit_text_size"
+            tools:ignore="LabelFor"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/activity_reset_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textColor="@color/colorAccent"
+        android:background="?android:attr/selectableItemBackground"/>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.amazing.zhizhi.view.DrawableTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/text_drawable_padding"
+            android:gravity="center"
+            android:text="@string/at_me"
+            android:drawablePadding="@dimen/text_drawable_padding"
+            android:drawableTop="@drawable/ic_at"
+            app:drawableWidth="@dimen/icon_size"
+            app:drawableHeight="@dimen/icon_size"/>
+
+        <View
+            android:layout_width="@dimen/badge_width"
+            android:layout_height="@dimen/badge_width"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/system_notification_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.amazing.zhizhi.view.DrawableTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/text_drawable_padding"
+            android:gravity="center"
+            android:text="@string/system_notification"
+            android:drawablePadding="@dimen/text_drawable_padding"
+            android:drawableTop="@drawable/ic_notification"
+            app:drawableWidth="@dimen/icon_size"
+            app:drawableHeight="@dimen/icon_size"/>
+
+        <View
+            android:id="@+id/system_notification_badge"
+            android:layout_width="@dimen/badge_width"
+            android:layout_height="@dimen/badge_width"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.amazing.zhizhi.view.DrawableTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/text_drawable_padding"
+            android:gravity="center"
+            android:text="@string/interested_in_me"
+            android:drawablePadding="@dimen/text_drawable_padding"
+            android:drawableTop="@drawable/ic_heart"
+            app:drawableWidth="@dimen/icon_size"
+            app:drawableHeight="@dimen/icon_size"/>
+
+        <View
+            android:layout_width="@dimen/badge_width"
+            android:layout_height="@dimen/badge_width"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.amazing.zhizhi.view.DrawableTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/text_drawable_padding"
+            android:gravity="center"
+            android:text="@string/enterprise_message"
+            android:drawablePadding="@dimen/text_drawable_padding"
+            android:drawableTop="@drawable/ic_enterprise"
+            app:drawableWidth="@dimen/icon_size"
+            app:drawableHeight="@dimen/icon_size"/>
+
+        <View
+            android:layout_width="@dimen/badge_width"
+            android:layout_height="@dimen/badge_width"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

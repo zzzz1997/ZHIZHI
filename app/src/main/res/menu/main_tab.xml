@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/home"
+        android:icon="@drawable/tab_home" />
+
+    <item
+        android:title="@string/find"
+        android:icon="@drawable/tab_find" />
+
+    <item
+        android:title="@string/me"
+        android:icon="@drawable/tab_me" />
+
+    <item
+        android:title="@string/message"
+        android:icon="@drawable/tab_message" />
+
+    <item
+        android:title="@string/me"
+        android:icon="@drawable/tab_me" />
+
+</menu>
